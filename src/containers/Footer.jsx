@@ -2,6 +2,7 @@ import React from 'react'
 import { footerLogo } from '../assets/images'
 import { socialMedia, footerLinks } from '../constants'
 import { copyrightSign } from '../assets/icons'
+import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 
 const Footer = () => {
@@ -36,9 +37,28 @@ const Footer = () => {
         <div className='flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer'>
           <img src={copyrightSign} alt='copyright sign' width={20} height={20} className='rounded-full m-0'/>
           <p>Copyright. All rights reserved</p>
+          
         </div>
         <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
       </div>
+      <div className='text-white-400 flex justify-center'>
+
+          <p> Developed by <a className='text-[#f4c10f]' href="https://sarthak-yadav-portfolio.netlify.app/" target="_blank">Sarthak Yadav </a></p>
+          
+          <div className='flex flex-1 justify-center items-center  mt-0.5 '>
+          <a href="https://www.instagram.com/the___enigma_/" target="_blank" rel="noopener noreferrer" className='px-1 hover:text-white'>
+          <FaInstagram size={25} />
+        </a>
+        <a href="https://www.linkedin.com/in/sarthak-001-001-yadav/" target="_blank" rel="noopener noreferrer" className='px-1 hover:text-white'>
+          <FaLinkedin size={25} />
+        </a>
+        <a href="https://github.com/Sarthakyadav98/" target="_blank" rel="noopener noreferrer" className='px-1 hover:text-white '>
+          <FaGithub size={25} />
+        </a>
+        </div>
+    
+      </div>
+    
 
       
     </footer>
